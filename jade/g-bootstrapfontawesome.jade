@@ -1,0 +1,35 @@
+doctype 
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title Bootstrap And Mixins
+
+		link(href='../lib/bootstrap-3.3.5-dist/css/bootstrap.min.css', rel='stylesheet')
+
+	body
+		h1 Hello, Bootstrap!
+
+		button#butOn(class="btn btn-default",type="button") Click Me
+		div.bg-primary This is example with Div Bootstrap
+
+		form.form-horizontal
+			.form-group
+				label.col-sm-2.control-label(for='inputEmail3') Email    
+				.col-sm-10
+					input#inputEmail3.form-control(type='email', placeholder='Email')
+			.form-group
+				label.col-sm-2.control-label(for='inputPassword3') Password   
+				.col-sm-10
+					input#inputPassword3.form-control(type='password', placeholder='Password')
+
+			.form-group
+				.col-sm-offset-2.col-sm-10
+					button.btn.btn-default(type='submit') Sign in
+
+		// jQuery (necessary for Bootstrap's JavaScript plugins)
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+
+		// Include all compiled plugins (below), or include individual files as needed
+		script(src='../lib/bootstrap-3.3.5-dist/js/bootstrap.min.js')
